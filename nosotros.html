@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nos ayuda para el responsive-->
+    <title>BlogDeCafe</title>
+    <meta name="description" content="Página web de blog de cafe">
+
+    <!-- Prefetch: se trata de cargar la siguiente página que es probable que el usuario visite
+    para dar mejor experiencia de usuario, Con Google analytics, por ejemplo, podemos saber en
+    que página de nuestra web pasan más tiempo los usuarios. Esa será la elegida para prefetch -->
+
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" 
+    crossorigin="crossorigin"  as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Sobre Nosotros</h3>
+
+        <div class="sobre-nosotros">
+            <div class="sobre-nosotros__imagen">
+                <img src="img/nosotros.jpg" alt="imagen nosotros">
+            </div>
+
+            <div class="sobre-nosotros__texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus pulvinar velit ac 
+                    sodales. Proin dapibus lacinia sem, non efficitur nisi. Vestibulum nisi massa,
+                    aliquet vel risus at, venenatis tempor libero. Pellentesque habitant morbi tristique 
+                    senectus et netus et malesuada fames ac turpis egestas. Vivamus ullamcorper ipsum 
+                    vel venenatis eleifend. Pellentesque et aliquet nisi. In lacinia posuere commodo. 
+                    Ut id odio quis urna tristique tincidunt eu vel metus.</p>
+
+                <p>Etiam pharetra, ipsum eu lobortis pharetra, erat felis interdum nulla, nec semper 
+                    enim lorem a nibh. Mauris varius iaculis dictum. Etiam pulvinar nisl nec neque 
+                    pellentesque, id imperdiet neque porta. Praesent in nisi et velit dictum venenatis 
+                    eu vitae nunc. Proin tristique est quam, eu aliquam justo sodales nec. Sed tristique
+                     purus eget sodales tempor. </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nos ayuda para el responsive-->
+    <title>BlogDeCafe</title>
+    <meta name="description" content="Página web de blog de cafe">
+
+    <!-- Prefetch: se trata de cargar la siguiente página que es probable que el usuario visite
+    para dar mejor experiencia de usuario, Con Google analytics, por ejemplo, podemos saber en
+    que página de nuestra web pasan más tiempo los usuarios. Esa será la elegida para prefetch -->
+
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" 
+    crossorigin="crossorigin"  as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+
+        <div class="contacto-background"></div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label> <!-- el for es para tema de accesibilidad-->
+                <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre"> <!-- Necesario el id para el for-->
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-Mail</label> <!-- el for es para tema de accesibilidad-->
+                <input class="campo__field" type="email" placeholder="Tu e-mail" id="email"> <!-- Necesario el id para el for-->
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label> <!-- el for es para tema de accesibilidad-->
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea> <!-- Necesario el id para el for-->
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

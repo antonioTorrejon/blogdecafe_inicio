@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nos ayuda para el responsive-->
+    <title>BlogDeCafe</title>
+    <meta name="description" content="Página web de blog de cafe">
+
+    <!-- Prefetch: se trata de cargar la siguiente página que es probable que el usuario visite
+    para dar mejor experiencia de usuario, Con Google analytics, por ejemplo, podemos saber en
+    que página de nuestra web pasan más tiempo los usuarios. Esa será la elegida para prefetch -->
+
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" 
+    crossorigin="crossorigin"  as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Nuestros próximos cursos y talleres</h3>
+
+        <img src="img/blog1.jpg" alt="imagen del blog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit nisl. Phasellus dapibus 
+        luctus purus, in molestie est tempor quis. Curabitur et turpis quis leo fringilla efficitur. 
+        Duis at mi lacus. Vestibulum mollis nulla id fermentum dictum. Quisque a est vel lorem 
+        scelerisque suscipit. Morbi porttitor, quam imperdiet finibus vestibulum, justo leo sagittis 
+        urna, eget tempor enim nisl vel orci. Quisque sed orci eu mauris malesuada ornare. Donec quis 
+        ornare odio. Sed sit amet malesuada libero, at tincidunt dolor.</p>
+
+        <p>Etiam a vulputate ante. Fusce nunc libero, feugiat non aliquam non, malesuada sed enim. Curabitur 
+        fermentum vestibulum purus a laoreet. Fusce euismod egestas mi. Aliquam luctus maximus velit non 
+        malesuada. Sed vestibulum egestas eros sit amet varius. Nullam efficitur, mi aliquet fermentum mollis,
+        odio diam congue massa, eu molestie urna ex in arcu.</p>
+
+        <p>Proin tempus gravida dui varius ultrices. Aenean maximus eget odio quis volutpat. Quisque aliquam 
+        mauris eu rutrum facilisis. Praesent venenatis, orci id venenatis tempus, dui arcu congue urna, vitae
+        consequat libero orci a leo. Etiam arcu nisi, tincidunt nec semper vitae, finibus at ipsum. Nullam 
+        a nunc nunc. Fusce at eros at leo venenatis egestas feugiat id sapien. Quisque ultrices tincidunt 
+        magna a facilisis. Nam vel imperdiet felis, quis consequat ante. Ut laoreet nibh diam, rhoncus 
+        tristique turpis pulvinar vitae. Aliquam semper tellus risus, eu aliquet dolor lobortis sit amet. Ma
+        uris leo ligula, consectetur sit amet elit id, ullamcorper euismod turpis. Nulla facilisi.</p>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>
